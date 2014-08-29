@@ -1,0 +1,15 @@
+{
+  "name": "tweet-remover",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "twit": "^1.1.18"
+  }
+}
