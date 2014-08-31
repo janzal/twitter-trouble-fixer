@@ -35,7 +35,7 @@ while canWork
   questions = for insult in insults
       "#{insult.text}"
 
-  rl.question """Do you really want to delete these tweets?
+  await rl.question """Do you really want to delete these tweets?
 
             #{questions.join ', '}
 
@@ -54,7 +54,7 @@ while canWork
         console.log "Tweet has been deleted..."
 
     when "S", "s", "select"
-      await for insult in insults
+      for insult in insults
         await rl.question "Do you want to keep tweets \"#{tweet.text}\"? [Y|n] ", defer answer
         return if answer isnt ("n" or "N")
 
